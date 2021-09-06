@@ -29,16 +29,11 @@ class App extends Component {
 
   //get info from fruits api
   componentDidMount() {
-    axios.get("https://www.fruityvice.com/api/fruit/all")
+    axios.get("https://powerful-bayou-97950.herokuapp.com/fruits")
       .then(res => {
         const fruit = res.data
         this.setState({ data:fruit });
       })
-      axios.get("https://www.geojs.io/docs/v1/endpoints/country/")
-      .then(res => {
-        const pics = res.data
-        this.setState({ test:pics });
-      }, console.log(this.state.test))
   }
 //set state for new fruit being displayed
   displayFruit(event){
