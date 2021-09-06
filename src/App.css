@@ -1,16 +1,13 @@
 .App {
   text-align: center;
+  background-color: grey;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pageTitle {
+  color: rgb(190, 192, 192);
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
 
 .App-header {
@@ -24,15 +21,57 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+.image{
+  height: 150px;
+  width: 150px;
+  margin : 10px;
+  transition: ease-in-out .2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.image:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.ModalImage{
+  height: 150px;
+  width: 150px;
+  margin : 15px;
+  margin-top: 20%;
+  float: left
+}
+@media only screen and (max-width: 650px) {
+  .image{
+    height: 50px;
+    width: 50px;
+    margin : 6px;
+    transition: ease-in-out .2s;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+
+.li {
+  list-style-type: none;
+  margin-left: 40%
+  
+}
+.ImageContainer{
+  height: 100%
+}
+
+.bolden{
+  font:1.3rem;
+  font-weight: bold;
+  text-decoration: underline 2px black;
+}
+
+.footer{
+  font-size: .5rem;
+  text-align: center;
+  justify-content: center;
 }
