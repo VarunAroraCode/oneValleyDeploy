@@ -34,7 +34,7 @@ class App extends Component {
         const fruit = res.data
         this.setState({ data:fruit });
       })
-      axios.get("https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/fruit-images.json")
+      axios.get("https://www.geojs.io/docs/v1/endpoints/country/")
       .then(res => {
         const pics = res.data
         this.setState({ test:pics });
