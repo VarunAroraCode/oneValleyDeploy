@@ -77,7 +77,6 @@ class App extends Component {
             {this.state.data.map(element => { 
                 var name = element.name
                 var currImage = fruitImages[name]
-                console.log("curr image: " + currImage)
                 return(
                   <div >
                     <img className = "image" src = {currImage}  

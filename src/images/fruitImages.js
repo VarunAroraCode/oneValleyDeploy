@@ -21,3 +21,4 @@ const fruitImages = {
     Tomato: "https://cdn.pixabay.com/photo/2016/02/17/19/26/tomato-1205699_960_720.jpg",
     Watermelon: "https://cdn.pixabay.com/photo/2015/06/19/16/48/watermelon-815072_960_720.jpg"
 }
+export default fruitImages;
