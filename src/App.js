@@ -19,7 +19,8 @@ class App extends Component {
       fat: "",
       protein: "",
       sugar: "",
-      order:""
+      order:"",
+      test:[]
     };
     //binding for helper functions
     this.displayFruit = this.displayFruit.bind(this);
@@ -33,6 +34,11 @@ class App extends Component {
         const fruit = res.data
         this.setState({ data:fruit });
       })
+      axios.get("https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/fruit-images.json")
+      .then(res => {
+        const pics = res.data
+        this.setState({ test:pics });
+      }, console.log(this.state.test))
   }
 //set state for new fruit being displayed
   displayFruit(event){
