@@ -54,11 +54,9 @@ class App extends Component {
   }
   //toggle the modal (seen/unseen)
   togglePop = () => {
-    console.log(this.state.seen)
-
     this.setState({
      seen: !this.state.seen
-    }, ()=>{console.log(this.state.seen)});
+    });
    };
   //default render (display loading screen until data comes in)
   render() {
@@ -79,6 +77,7 @@ class App extends Component {
             {this.state.data.map(element => { 
                 var name = element.name
                 var currImage = fruitImages[name]
+                console.log("curr image: " + currImage)
                 return(
                   <div >
                     <img className = "image" src = {currImage}  
